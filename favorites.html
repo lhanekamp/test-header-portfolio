@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Favorites</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header class="menu">
+      <a href="index.html">
+        <img src="images/AA.png" alt="logo" class = "logo">
+      </a>
+      <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">
+            <div>
+                <i class="fa fa-bars"></i>
+                <span>Menu</span>
+            </div>
+            
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a class="current" href="favorites.html">Our Favorites</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contactus.html">Contact Us</a>
+            
+        </div>
+        </div>
+    
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn div span')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <nav class = "desktop-nav">
+            <ul class="nav_links">
+              <li class="nav_item"><a href="index.html">Home</a></li>
+              <li class="nav_item"><a class="current" href="favorites.html">Our Favorites</a></li>
+              <li class="nav_item"><a href="gallery.html">Gallery</a></li>
+              <li class="nav_item"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main class="grid_space" id ="skip">
+      
+    <header id="main">
+        <div>
+            <h1>Our Favorites</h1>
+            <p>Learn about our favorite resturant picks in Ann Arbor, Michigan. From breakfast to brunch or from dinner to lunch we will share our favorites. Below our some of our favorite classic Ann Arbor resturants as well as a few hidden gems.</p>
+        </div>    
+    </header>
+      
+      <div class="breakfast">
+        <img src="images/breakfast-fav.jpeg" alt="Breakfast Food"/>
+      </div>
+      
+      <div class="breakfast-text box">
+        <div id="breakfast"></div>
+        <h1>Breakfast & Brunch</h1>
+        <h2>Below is a list of our favorite breakfast and brunch resturants.</h2>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="favs-breakfast">
+          <div class="fav-text favs odd">
+            <h1>Breakfast and Brunch Favorite Spots:</h1>
+            <ul>
+                <li class="fav-list"><a href="https://www.angelosa2.com">› Angelo's</a></li>
+                <li class="fav-list"><a href="https://www.savasannarbor.com">› Sava's</a></li>
+                <li class="fav-list"><a href="https://www.amabistro.com">› Amas</a></li>
+                <li class="fav-list"><a href="https://bennysfamilydining.com">› Benny's</a></li>
+                <li class="fav-list"><a href="https://www.amersdeli.com">› Amers</a></li>
+                <li class="fav-list"><a href="https://www.dimosdelianddonuts.com">› Dimos</a></li>
+                <li class="fav-list"><a href="https://avalonbreads.net/pages/avalon-ann-arbor">› Avalon</a></li>
+                <li class="fav-list"><a href="https://strayhencafe.com/ann-arbor/">› Stray Hen</a></li>
+            </ul>
+           </div>
+           <div class="fav-image favs odd">
+            <img src="images/utensil.png" alt="Utensil"/>
+           </div>
+      </div>
+  
+      <div class="lunch">
+        <img src="images/lunch.jpeg" alt="Lunch Food"/>
+      </div>
+      
+      <div class="lunch-text box">
+        <div id="lunch"></div>
+        <h1>Lunch</h1>
+        <h2>Below is a list of our favorite lunch resturants.</h2>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="favs-lunch">
+          <div class="fav-text favs even">
+            <h1>Lunch Favorite Spots:</h1>
+            <ul>
+                <li class="fav-list"><a href="https://www.zingermansdeli.com">› Zingerman's</a></li>
+                <li class="fav-list"><a href="https://www.savasannarbor.com">› Savas</a></li>
+                <li class="fav-list"><a href="https://www.corelifeeatery.com">› Core Life</a></li>
+                <li class="fav-list"><a href="https://thelunchrooma2.com">› Detroit Filling Station</a></li>
+                <li class="fav-list"><a href="https://www.amersdeli.com">› Amers</a></li>
+                <li class="fav-list"><a href="https://beyondjuiceryeatery.com">› Beyond Juicery & Eatery</a></li>
+                <li class="fav-list"><a href="https://avalonbreads.net/pages/avalon-ann-arbor">› Avalon</a></li>
+                <li class="fav-list"><a href="https://www.revive-replenish.com">› Revive</a></li>
+                <li class="fav-list"><a href="https://pizzahouse.com/locations/ann-arbor/">› Pizza House</a></li>
+                <li class="fav-list"><a href="https://www.charleysannarbor.com/">› Good Time Charley's</a></li>
+            </ul>
+           </div>
+           <div class="fav-image favs even">
+            <img src="images/utensil.png" alt="Utensil"/>
+           </div>
+      </div>
+  
+      <div class="dinner">
+        <img src="images/dinner.jpeg" alt="Dinner Food"/>
+      </div>
+      
+      <div class="dinner-text box">
+        <div id="dinner"></div>
+        <h1>Dinner</h1>
+        <h2>Below is a list of our favorite dinner resturants.</h2>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="favs-dinner">
+          <div class="fav-text favs odd">
+            <h1>Dinner Favorite Spots:</h1>
+            <ul>
+                <li class="fav-list"><a href="http://knightsrestaurants.com/knights-steakhouse-downtown-ann-arbor">› Knight's Steakhouse</a></li>
+                <li class="fav-list"><a href="https://www.blackpearlannarbor.com/">› Black Pearl</a></li>
+                <li class="fav-list"><a href="https://paliorestaurant.com/">› Palio</a></li>
+                <li class="fav-list"><a href="https://www.blackpearlannarbor.com/">› Mani</a></li>
+                <li class="fav-list"><a href="https://www.bistrozola.com">› Zola Bistro</a></li>
+                <li class="fav-list"><a href="https://www.aventuraannarbor.com/">› Aventura</a></li>
+                <li class="fav-list"><a href="https://bigalora.com">› Bigalora</a></li>
+                <li class="fav-list"><a href="http://tastekitchena2.com">› Taste Kitchen</a></li>
+                <li class="fav-list"><a href="https://thepretzelbell.com/wp">› Pretzel Bell</a></li>
+                <li class="fav-list"><a href="https://www.zingermansroadhouse.com">› Zingerman's Roadhouse</a></li>
+                <li class="fav-list"><a href="https://thechophouserestaurant.com">› Chop House</a></li>
+                <li class="fav-list"><a href="https://realseafoodcorestaurant.com">› Real Seafood</a></li>
+                <li class="fav-list"><a href="https://pacificrimbykana.com/">› Pacific Rim</a></li>
+                <li class="fav-list"><a href="https://ofriceandmen.com/">› Of Rice and Men</a></li>
+
+            </ul>
+           </div>
+           <div class="fav-image favs odd">
+            <img src="images/utensil.png" alt="Utensil"/>
+           </div>
+      </div>
+  
+      <div class="snack">
+        <img src="images/snack.jpeg" alt="Snack Food"/>
+      </div>
+      
+      <div class="snack-text box">
+        <div id="snack"></div>
+        <h1>Snacks & Cheap Food</h1>
+        <h2>Below is a list of our favorite snack spots.</h2>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="favs-snack">
+          <div class="fav-text favs even">
+            <h1>Favorite Snack Spots:</h1>
+            <ul>
+                <li class="fav-list"><a href="https://fritabatidos.com/">› Frita Batido's</a></li>
+                <li class="fav-list"><a href="https://www.google.com/maps/place/Joe's+Pizza+NYC/@42.2751992,-83.735705,15z/data=!4m2!3m1!1s0x0:0xa9330d9cd90443c0?sa=X&ved=2ahUKEwjxuZr4oPrzAhVoAp0JHTkTCbUQ_BJ6BAhCEAU">› Joe's Pizza</a></li>
+                <li class="fav-list"><a href="https://mikiannarbor.com/">› Miki</a></li>
+                <li class="fav-list"><a href="http://www.tomukun.com/">› Tomukun</a></li>
+                <li class="fav-list"><a href="https://www.taqannarbor.com/">› TAQ</a></li>
+                <li class="fav-list"><a href="https://www.amersdeli.com">› Amers</a></li>
+                <li class="fav-list"><a href="https://misskimannarbor.com/">› Miss Kim</a></li>
+                <li class="fav-list"><a href="https://goo.gl/maps/1REJ5ySgjxBnxfSx9">› Rich JC</a></li>
+                <li class="fav-list"><a href="https://bopjib.com/">› Bopjib</a></li>
+                <li class="fav-list"><a href="https://www.maizeandbluedeli.com/">› Maize & Blue Deli</a></li>
+                <li class="fav-list"><a href="http://www.pokefishsushi.com/">› Poke Fish</a></li>
+                <li class="fav-list"><a href="http://www.raysredhots.com/">› Ray's Red Hots</a></li>
+                <li class="fav-list"><a href="https://mrspots.com/">› Mr Spots</a></li>
+
+            </ul>
+           </div>
+           <div class="fav-image favs even">
+            <img src="images/utensil.png" alt="Utensil"/>
+           </div>
+      </div>
+      <div class="dessert">
+        <img src="images/dessert.jpeg" alt="Dessert Food"/>
+      </div>
+      
+      <div class="dessert-text box">
+        <div id="dessert"></div>
+        <h1>Desserts</h1>
+        <h2>Below is a list of our favorite dessert and ice cream spots.</h2>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="favs-dessert">
+          <div class="fav-text favs even">
+            <h1>Favorite Dessert and Ice Cream Spots:</h1>
+            <ul>
+                <li class="fav-list"><a href="https://crumblcookies.com/annarbor">› Crumbl Cookies</a></li>
+                <li class="fav-list"><a href="http://www.blankslatecreamery.com/">› Blank Slate Creamery</a></li>
+                <li class="fav-list"><a href="https://g.page/insomnia-cookies-ann-arbor?share">› Insomnia</a></li>
+                <li class="fav-list"><a href="https://goo.gl/maps/hHj85zVsr8ssv23V9">› Ben & Jerry's</a></li>
+                <li class="fav-list"><a href="https://www.detroitcookieco.com/">› Detriot Cookie Company</a></li>
+                <li class="fav-list"><a href="https://www.kilwins.com/stores/kilwins-ann-arbor">› Kilwins</a></li>
+                <li class="fav-list"><a href="https://washtenawdairy.com/">› Washtenaw Dairy</a></li>
+                <li class="fav-list"><a href="https://lebonmacaron.com/portfolio-item/gallery/">› Le Bon Macaron</a></li>
+                <li class="fav-list"><a href="https://www.mooncafeannarbor.com/">› Moon Cafe</a></li>
+
+            </ul>
+           </div>
+           <div class="fav-image favs even">
+            <img src="images/utensil.png" alt="Utensil"/>
+           </div>
+      </div>
+    </main>
+    <footer>
+        <div>
+         <img src="images/AA.png" alt="logo" class = "logo">
+         <h2>Ann Arbor Foodies </h2>
+         <h3>Bringing you the best food choices <br/>
+             throughout Ann Arbor, MI. </h3>
+        </div> 
+ 
+        <div>
+         <ul class="footer_links">
+             <li class="footer_item"><a class="current" href="index.html">Home</a></li>
+             <li class="footer_item"><a href="favorites.html">Our Favorites</a></li>
+             <li class="footer_item"><a href="gallery.html">Gallery</a></li>
+             <li class="footer_item"><a href="contactus.html">Contact Us</a></li>
+         </ul>
+         <p>University of Michigan  <br/>
+             &copy; Logan Hanekamp - 2021</p>
+        </div>
+       
+       
+     </footer>
+        
+        
+
+        
+        
+        
+    
+</body>
+</html>

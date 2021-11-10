@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Gallery</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header class="menu">
+        <a href = "index.html">
+            <img src="images/AA.png" alt="logo" class = "logo">
+          </a>
+      <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">
+            <div>
+                <i class="fa fa-bars"></i>
+                <span>Menu</span>
+            </div>
+            
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Our Favorites</a>
+            <a class="current" href="gallery.html">Gallery</a>
+            <a href="contactus.html">Contact Us</a>
+            
+        </div>
+        </div>
+    
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn div span')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <nav class = "desktop-nav">
+            <ul class="nav_links">
+              <li class="nav_item"><a href="index.html">Home</a></li>
+              <li class="nav_item"><a href="favorites.html">Our Favorites</a></li>
+              <li class="nav_item"><a class="current" href="gallery.html">Gallery</a></li>
+              <li class="nav_item"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main class="gallery-wall" id ="skip">
+      
+    <header id="gallery">
+        <div>
+            <h1>Gallery</h1>
+            <p>Check out our favorite resturants, food, snacks, and more in our gallery below.</p>
+        </div>    
+    </header>
+      
+    <div class="container">
+        <div class="breakfast-gallery">
+            <div class="img-one"><img src="images/zingermans.jpeg" alt="zingermans dimosdelianddonuts"/></div>
+  
+            <div class="img-two"><img src="images/fritas.jpeg" alt="frita batitos" /></div>
+  
+            <div class="img-three"><img src="images/of-rice.jpeg" alt="of rice and men" /></div>
+        </div>
+        <div class="lunch-gallery">
+            <div class="img-four"><img src="images/about-food.JPG" alt="lunch food"/></div>
+  
+            <div class="img-five"><img src="images/crumbl.jpeg" alt="crumbl cookies" /></div>
+  
+            <div class="img-six"><img src="images/moon.jpeg" alt="moon cafe ice cream" /></div>
+            
+            <div class="img-seven"><img src="images/lunch.jpeg" alt="lunch" /></div>
+
+        </div>
+        <div class="dinner-gallery">
+            <div class="img-eight"><img src="images/savas.jpeg" alt="savas meal"/></div>
+  
+            <div class="img-nine"><img src="images/rays.jpeg" alt="ray's red hots" /></div>
+  
+            <div class="img-ten"><img src="images/snack.jpeg" alt="dimos breakfast sandwiches" /></div>
+            <div class="img-eleven"><img src="images/aventura.png" alt="aventura meal" /></div>
+            <div class="img-twelve"><img src="images/chop.jpeg" alt="chop house steak" /></div>
+            <div class="img-thirteen"><img src="images/dinner.jpeg" alt="dinner" /></div>
+
+            
+
+        </div>
+    
+    </div>
+    </main>
+    <footer>
+        <div>
+         <img src="images/AA.png" alt="logo" class = "logo">
+         <h2>Ann Arbor Foodies </h2>
+         <h3>Bringing you the best food choices <br/>
+             throughout Ann Arbor, MI. </h3>
+        </div> 
+ 
+        <div>
+         <ul class="footer_links">
+             <li class="footer_item"><a href="index.html">Home</a></li>
+             <li class="footer_item"><a href="favorites.html">Our Favorites</a></li>
+             <li class="footer_item"><a class="current" href="gallery.html">Gallery</a></li>
+             <li class="footer_item"><a href="contactus.html">Contact Us</a></li>
+         </ul>
+         <p>University of Michigan  <br/>
+             &copy; Logan Hanekamp - 2021</p>
+        </div>
+       
+       
+     </footer>
+        
+      
+    
+</body>
+</html>

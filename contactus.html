@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header class="menu">
+      <a href="index.html">
+        <img src="images/AA.png" alt="logo" class = "logo">
+      </a>
+      <div class="dropdown">
+        
+        <button onclick="myFunction()" class="dropbtn">
+            <div>
+                <i class="fa fa-bars"></i>
+                <span>Menu</span>
+            </div>
+            
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Our Favorites</a>
+            <a href="gallery.html">Gallery</a>
+            <a class="current" href="contactus.html">Contact Us</a>
+            
+        </div>
+        </div>
+    
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn div span')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <nav class = "desktop-nav">
+            <ul class="nav_links">
+              <li class="nav_item"><a href="index.html">Home</a></li>
+              <li class="nav_item"><a href="favorites.html">Our Favorites</a></li>
+              <li class="nav_item"><a href="gallery.html">Gallery</a></li>
+              <li class="nav_item"><a class="current" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main class="contactus" id ="skip">
+      
+    <header id="contact-us">
+        <div>
+            <h1>Contact Us</h1>
+            <p>Complete the following form, and we'll answer any questions you may have. Also feel free to reach out if you have any favorite spots in Ann Arbor we have yet to find!
+            </p>
+        </div>    
+    </header>
+    <div class="about-us">
+        <h1>Contact Us!</h1>
+        <div id="form">
+        <hr>
+        <form action="submission.html" method="POST">
+    
+		<section class="name">
+          <h2>Name</h2>
+          <div class="sidebyside">
+            <div class="first">
+                <input type="text" id="fname" name="fname" >
+                <label for="fname">First</label><br>
+            </div>
+            <div class="last">
+                <input type="text" id="lname" name="lname" >
+                <label for="lname">Last</label><br>
+            </div>
+          </div>
+
+        </section>
+        <section class="email">
+            <div id="email-address">
+              <label for="email">Email</label><br>
+              <input type="text" id="email" name="email" >
+                  
+            </div>
+          </section>
+          <hr>
+          <section class="phone">
+            <div id="phone-number">
+              <label for="phone">Phone Number</label><br>
+                  <input type="text" id="phone" name="phone" >
+            </div>
+          </section>
+          <hr>
+
+        <section class="message">
+          <label for="message">Message</label>
+          <br>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input class="submit" type="submit" value="Send Message">
+        </section>
+        
+      </form>
+        </div>
+    </div> 
+        <div id="contact-info">
+        <div class = "contact-bckgrnd1"> 
+        </div>
+        <div class = "contact-bckgrnd2"> 
+        
+        
+                <h3>
+                    About Us
+                </h3>
+                <img src="images/AA.png" alt="logo" class = "logo">
+                <div>
+                    <h2> Hello! My name is Logan. I am currently a junior at the University of Michigan. I created Ann Arbor Foodies to share my love of food and finding fun and delicious places to eat all around Ann Arbor. I hope my favorites I have shared inspire you to try new places in Ann Arbor, MI. These are some of my favorites, but please feel free to contact me if I am missing any of your favorite spots. I love hearing about new places just as much as I love discovering them on my own! 
+                    </h2>
+                </div>
+            
+            </div>
+            <div class = "contact-bckgrnd3"> 
+            </div>
+
+            <div class="contact-icon">
+                <img src="images/pin.png" alt="pin" id = "pin">
+                <div class="text">
+                    
+                    <h3>Best Food Finds in:</h3>
+                    <h1>Ann Arbor, Michigan</h1>
+
+                </div>
+            </div>
+
+            <div id = "map">
+            
+              </div>
+        </div>
+
+    
+            
+
+      
+    
+    
+    </main>
+    <footer>
+        <div>
+         <img src="images/AA.png" alt="logo" class = "logo">
+         <h2>Ann Arbor Foodies </h2>
+         <h3>Bringing you the best food choices <br/>
+             throughout Ann Arbor, MI. </h3>
+        </div> 
+
+        <div>
+         <ul class="footer_links">
+             <li class="footer_item"><a href="index.html">Home</a></li>
+             <li class="footer_item"><a href="favorites.html">Our Favorites</a></li>
+             <li class="footer_item"><a href="gallery.html">Gallery</a></li>
+             <li class="footer_item"><a class="current" href="contactus.html">Contact Us</a></li>
+         </ul>
+         <p>University of Michigan  <br/>
+             &copy; Logan Hanekamp - 2021</p>
+        </div>
+       
+       
+     </footer>
+        
+      
+    
+</body>
+</html>
