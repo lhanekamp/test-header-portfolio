@@ -159,7 +159,6 @@ header .logo {
     color: #FFFFFF;
     animation-name: zoom-in;
     animation-duration: 3s;
-    animation-timing-function: linear;
     text-align: center;
 
 
