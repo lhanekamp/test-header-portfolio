@@ -232,7 +232,6 @@ header .logo {
 }
 
 #about div h1{
-   
     font-size: 2em;
     margin-top: 35px;
     letter-spacing: .13px;
@@ -278,7 +277,8 @@ header .logo {
 
 .headline h1 {
     color: #11233f;
-    font-size: 3em;
+    font-size: 2.6em;
+    margin-top: 12px;
     font-family: 'Poppins';
     font-weight: 200;
     text-transform: capitalize;
@@ -301,9 +301,11 @@ header .logo {
 }
 
   #favorites .fav1 {
-    background: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/dimos.jpeg);
+    background: radial-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 15%)), url(../images/angelos.jpeg);
     font-size: 1em;
-    background-size: cover;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,13 +314,12 @@ header .logo {
     border-radius: 0;
     min-height: 300px;
     box-shadow: .5px .5px 5px .5px #2e2d2d73;
-    transition-property: font-size, border-radius;
-    transition-duration: 2s;
+   
     }
 
    
   #favorites .fav2 {
-    background-image: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/zingermans.jpeg);
+    background-image: radial-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 15%)), url(../images/zingermans.jpeg);
     font-size: 1em;
     background-size: cover;
     display: flex;
@@ -334,7 +335,7 @@ header .logo {
     }
 
   #favorites .fav3 {
-    background-image: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/of-rice.jpeg);
+    background-image: radial-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 15%)), url(../images/of-rice.jpeg);
     font-size: 1em;
     background-size: cover;
     display: flex;
@@ -349,7 +350,7 @@ header .logo {
     transition-duration: 2s;
     }
   #favorites .fav4 {
-    background-image: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/fritas.jpeg);
+    background-image: radial-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 15%)), url(../images/fritas.jpeg);
     font-size: 1em;
     background-size: cover;
     display: flex;
@@ -364,9 +365,9 @@ header .logo {
     transition-duration: 2s;
     }
   #favorites .fav5 {
-    background-image: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/crumbl.jpeg);
+    background-image: radial-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 15%)), url(../images/crumbl.jpeg);
     font-size: 1em;
-    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,14 +383,14 @@ header .logo {
 
 
   #favorites .fav1 h1, #favorites .fav2 h1, #favorites .fav3 h1, #favorites .fav4 h1, #favorites .fav5 h1 {
-      font-size: 2em;
+      font-size: 1.6em;
       font-family: 'Poppins';
       font-weight: 800;
       color: #162F54;
   }
 
   #favorites .fav1 h4, #favorites .fav2 h4, #favorites .fav3 h4, #favorites .fav4 h4, #favorites .fav5 h4 {
-    font-size: 1.15em;
+    font-size: 1em;
     font-family: 'Raleway';
     font-weight: 700;
     color: black;
@@ -398,68 +399,59 @@ header .logo {
   
 
   #favorites .fav1:hover {
+    background: linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 85%)), url(../images/angelos.jpeg);
     display: block;
-    font-size: 1.2em;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 310px;
-  	border-radius:10%;
+ 
 
   }
 
  #favorites .fav2:hover  {
     display: block;
-    background: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/zingermans.jpeg);
-    font-size: 1.2em;
+    background:  linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 85%)), url(../images/zingermans.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 310px;
-  	border-radius:10%;
+
 
   }
   #favorites .fav3:hover  {
     display: block;
-    background: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/of-rice.jpeg);
-    font-size: 1.2em;
+    background:  linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 85%)), url(../images/of-rice.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 310px;
-  	border-radius:10%;
+   
 
   }
   #favorites .fav4:hover  {
     display: block;
-    background: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/fritas.jpeg);
-    font-size: 1.2em;
+    background:  linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 85%)), url(../images/fritas.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 310px;
-  	border-radius:10%;
+    
 
   }
   #favorites .fav5:hover  {
     display: block;
-    background: linear-gradient(180deg, rgb(255 255 255 / 65%), rgb(255 255 255 / 65%)), url(../images/crumbl.jpeg);
-    font-size: 1.2em;
+    background:  linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 85%)), url(../images/crumbl.jpeg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 310px;
-  	border-radius:10%;
+    
 
   }
  
