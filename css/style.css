@@ -546,6 +546,7 @@ footer .footer-text h2{
     margin-bottom: 22px;
     border-width:5px;  
     border-bottom-style: double;
+    border-top:none;
     border-radius: 20%;
 
     
