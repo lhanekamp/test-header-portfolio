@@ -153,14 +153,13 @@ header .logo {
   }
   
   #hero h1{
-    font-size: 28px;
+    font-size: 2.2em;
     font-family: 'Raleway';
     text-shadow: 1px 2px #3E577D;
     color: #FFFFFF;
     animation-name: zoom-in;
     animation-duration: 3s;
     animation-timing-function: linear;
-   
     text-align: center;
 
 
@@ -184,7 +183,7 @@ header .logo {
     }
   
     100% {
-        font-size: 28px;
+        font-size: 2.2em;
        
 
      }
