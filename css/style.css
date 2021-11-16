@@ -1219,12 +1219,12 @@ hr {
 }
 
 #hero {
-  align-items: flex-end;
+  align-items: end;
   background-image: url(../images/state.jpg);
 }
 #hero div {
   text-align: left;
-  width: 55%;
+  width: 60%;
   padding-left: 12px;
   border-left: 10px rgb(255 255 255 /50%) solid;
 
@@ -1271,7 +1271,7 @@ hr {
 }
 
 .fav-text {
-  width: 350px;
+  width: 375px;
 }
 
 #contact {
@@ -1354,7 +1354,7 @@ footer img .logo{
 }
 
 
-@media screen and (min-width: 1624px){
+@media screen and (min-width: 1224px){
   #hero {
     display: flex;
     flex-direction: column;
