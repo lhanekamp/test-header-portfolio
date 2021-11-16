@@ -141,13 +141,19 @@ header .logo {
     background-size: cover;
     color: white;
     justify-content: center;
-
+    padding-left: 20px;
+    padding-right: 20px;
     height: 500px; 
     background-image: linear-gradient(180deg, rgb(6 10 28 / 74%), rgb(14 18 42 / 72%)), url(../images/state.jpg);
     background-repeat: no-repeat;
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
     
+  }
+
+  #hero div {
+    text-align: center;
+    width: 100%;
   }
   
   #hero h1{
@@ -1211,7 +1217,156 @@ hr {
   left: -.3em; 
   width: calc(100% + .4em);
 }
+
+#hero {
+  align-items: end;
+  background-image: url(../images/state.jpg);
+}
+#hero div {
+  text-align: left;
+  width: 55%;
+  padding-left: 12px;
+  border-left: 10px rgb(255 255 255 /50%) solid;
+
+}
+
+#hero h1 {
+    font-size: 3.75em;
+    font-family: 'Biryani';
+    margin-top: 10px;
+    font-weight: 600;
+    text-shadow: none;
+    line-height: 1;
+    text-align: left;
+    color: #162f54;
+}
+
+#hero h3 {
+  color: #162f54;
+
+}
+
+#hero p {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  margin-top: 5px;
+  color: #3e577d;
+}
+
+.headline h1 {
+  font-size: 3.25em;
+  font-weight: 500;
+}
+
+.headline h2 {
+  font-size: 1.2em;
+}
+
+.headline .fa {
+  font-size: 74px;
+}
+
+#favorites {
+  padding: 50px;
+}
+
+.fav-text {
+  width: 350px;
+}
+
+#contact {
+  padding-right: 10%;
+  padding-left: 20px;
+
+}
+
+#contact .contact-photo {
+  width: 35%;
+  margin-top: -10%;
+}
   
+#about {
+    flex-direction: row;
+
+}
+.grid_space header{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+    min-height: 400px;
+    background: linear-gradient(180deg, rgb(6 10 28 / 74%), rgb(14 18 42 / 72%)), url(../images/stadium.jpeg);;
+    background-repeat: no-repeat;
+    padding: 75px 20px;
+  
+  }
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 75px 20px 50px 20px;
+    align-items: center;
+ }
+ footer p{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+footer h2{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    padding-left: 5px;
+    margin-bottom: 12px;
+}
+footer h3{
+    color: #162F54;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.15em;
+    font-family: 'Poppins';
+    padding-left: 5px;
+}
+footer div {
+    width: 60%;
+    padding-left: 50px;
+}
+footer .footer_links .footer_item a {
+  font-size: 18px;
+}
+
+footer .footer_links {
+  margin-top: auto;
+  justify-content: center;
+}
+
+
+footer .footer-text {
+  width: 40%;
+  margin: 0;
+
+}
+footer img .logo{
+    max-width: 150px;
+    margin-top: auto;
+}
+}
+
+
+@media screen and (min-width: 1024px){
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; 
+    color: white; 
+  }
+
+
 
 #favorites .fav1 {
   background: url(../images/dimos.jpeg);
@@ -1325,84 +1480,4 @@ display: block;
 #favorites .fav5:hover h1, #favorites .fav5:hover h4 {
 display: block;
 }
-#about {
-    flex-direction: row;
-
-}
-.grid_space header{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-size: cover;
-    color: white;
-    min-height: 400px;
-    background: linear-gradient(180deg, rgb(6 10 28 / 74%), rgb(14 18 42 / 72%)), url(../images/stadium.jpeg);;
-    background-repeat: no-repeat;
-    padding: 75px 20px;
-  
-  }
-footer {
-    display: flex;
-    flex-direction: row;
-    padding: 75px 20px 50px 20px;
-    align-items: center;
- }
- footer p{
-    color: #FFFFFF;
-    font-size: 12px;
-}
-
-footer h2{
-    color: #FFFFFF;
-    font-size: 24px;
-    font-family: 'Montserrat';
-    padding-left: 5px;
-    margin-bottom: 12px;
-}
-footer h3{
-    color: #162F54;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 1.15em;
-    font-family: 'Poppins';
-    padding-left: 5px;
-}
-footer div {
-    width: 60%;
-    padding-left: 50px;
-}
-footer .footer_links .footer_item a {
-  font-size: 18px;
-}
-
-footer .footer_links {
-  margin-top: auto;
-  justify-content: center;
-}
-
-
-footer .footer-text {
-  width: 40%;
-  margin: 0;
-
-}
-footer img .logo{
-    max-width: 150px;
-    margin-top: auto;
-}
-}
-
-
-@media screen and (min-width: 1024px){
-  #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover; 
-    color: white; 
-  }
 }
