@@ -1221,6 +1221,8 @@ hr {
 #hero {
   align-items: end;
   background-image: url(../images/state.jpg);
+  border-bottom: 20px solid #162f54;
+
 }
 #hero div {
   text-align: left;
