@@ -567,14 +567,20 @@ footer .footer-text h2{
 .grid_space header{
   
   background-size: cover; 
-  color: white;
-  min-height: 400px; 
   background-image: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%)), url(../images/stadium.jpeg);
   background-repeat: no-repeat;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
-  padding: 75px 20px;
+ 
 
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    padding: 75px 20px;
 }
 
 .grid_space #main div{
@@ -807,7 +813,7 @@ footer .footer-text h2{
   justify-content: center;
   background-size: cover; 
   color: white;
-  min-height: 400px; 
+  min-height: 500px; 
   background: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%));
   background-repeat: no-repeat;
   padding: 75px 20px;
@@ -1309,12 +1315,32 @@ margin-top: -10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-size: cover;
   color: white;
-  min-height: 550px;
+  min-height: 500px;
   background: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%));
   background-repeat: no-repeat;
   padding: 75px 20px;
+
+}
+.grid_space #main div {
+  width: 70%;
+}
+
+.grid_space header h1 {
+ 
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.grid_space header p {
+  font-family: 'Montserrat';
+    text-align: center;
+    font-size: 1.1em;
 
 }
 
@@ -1454,6 +1480,7 @@ margin-top: -10%;
   padding: 50px 20px;
   border-bottom: 10px solid #FFFFFF;
   width: 100%;
+  margin-bottom: 50px;
   
 }
 
