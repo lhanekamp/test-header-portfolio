@@ -1354,7 +1354,7 @@ footer img .logo{
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1224px){
   #hero {
     display: flex;
     flex-direction: column;
