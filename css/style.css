@@ -1217,7 +1217,7 @@ hr {
 }
 
 #hero {
-  align-items: flex-end;
+  align-items: end;
   background-image: url(../images/state.jpg);
 }
 #hero div {
@@ -1348,7 +1348,7 @@ footer .footer-text {
 footer img .logo{
     max-width: 150px;
     margin-top: auto;
-}
+  }
 }
 
 
