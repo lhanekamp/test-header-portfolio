@@ -839,6 +839,9 @@ footer .footer-text h2{
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
+  border-bottom: none;
+  grid-gap: 0px;
+
 
 }
 
@@ -857,6 +860,8 @@ footer .footer-text h2{
   display: grid;
   grid-column: 1 / -1;
   grid-template-rows:  repeat(4, auto);
+  border-bottom: none;
+  grid-gap: 0px;
 }
 
 .img-four {
@@ -877,6 +882,8 @@ footer .footer-text h2{
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, auto);
+  border-bottom: none;
+  grid-gap: 0px;
 }
 
 .img-eight {
@@ -938,13 +945,13 @@ grid-row: 6 / -1;
 }
 .about-us h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: #162F54;
   color:white;
-  font-family: 'Abril Fatface';
+  font-family: 'Montserrat';
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -1285,9 +1292,8 @@ margin-top: -10%;
 }
 
 .about-us {
-  
+  padding: 0px 20px;
   width: 75%;
-  margin: auto;
 }
 
 .contact-bckgrnd2 h3 {
@@ -1411,6 +1417,61 @@ margin-top: -10%;
   grid-row: 4 / -1;
 }
 
+#contact-us {
+  background-color: #FFFFFF;
+  padding: 25px 0px 0px 20px;
+  
+}
+#contact-us h1 {
+  font-size: 6em;
+    background: #FFFFFF;
+    text-align: left;
+    font-family: 'Poppins';
+    z-index: 10;
+    margin-left: 10px;
+   
+}
+
+#contact-us p{
+  background-color: rgb(221 221 221 / 45%);
+  font-size: 1.25em;
+  display: flex;
+  padding: 50px;
+  width: 60%;
+
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 300px;
+    margin-bottom: -4%;
+    z-index: 0;
+    position: relative;
+    margin-left: auto;
+}
+
+.about-us {
+  background: #162F54;
+  padding: 50px 20px;
+  border-bottom: 10px solid #FFFFFF;
+  border-bottom-right-radius: 10%;
+  width: 100%;
+  border-bottom-right-radius: 50%;
+}
+
+.about-us h1 {
+  width: 70%;
+  background-color: #3e577d;
+  font-family: 'Montserrat';
+  font-size: 1.7em;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#form {
+  width: 70%;
+  position: relative;
+    margin-bottom: -10%;
+}
 footer {
   display: flex;
   flex-direction: row;
