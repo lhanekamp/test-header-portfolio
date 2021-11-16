@@ -25,8 +25,8 @@
         <img src="images/AA.png" alt="logo" class = "logo">
       </a>
       <div class="dropdown">
-        
-        <button onclick="myFunction()" class="dropbtn">
+
+        <button id="dropbtn">
             <div>
                 <i class="fa fa-bars"></i>
                 <span>Menu</span>
@@ -41,28 +41,6 @@
             
         </div>
         </div>
-    
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn div span')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-        </script>
         <nav class = "desktop-nav">
             <ul class="nav_links">
               <li class="nav_item"><a class="current" href="index.html">Home</a></li>
@@ -85,7 +63,7 @@
         <div>
             <h2>AA Foodies</h2>
             <h1>Learn about the best food and resturants all around Ann Arbor.</h1>
-            <h3>Follow me as I venture into the world of  foods and fancy restaurants around Ann Arbor.</h3>
+            <p>Follow me as I venture into the world of  foods and fancy restaurants around Ann Arbor.</p>
 
         </div> 
         <img src="images/fork-knife.png" alt="plate fork and knife"> 
@@ -95,7 +73,7 @@
       <div class="headline">
         <h1>Check out our favorites</h1>
         <h2>Click the images below to learn more.</h2>
-        <i class="fa fa-angle-down"></i>
+        <a aria-label = "Favorites" href="#favorites"> <i class="fa fa-angle-down"></i></a>
     </div>
 
 
@@ -105,7 +83,7 @@
             <div class="fav1">
               <div class="fav-text">
                 <h1>Brunch</h1>
-                <h4>Check out our favorite brunch foods ›</h4>
+                <p>Check out our favorite brunch foods ›</p>
               </div>
             </div> 
         </a>
@@ -114,7 +92,7 @@
             <div class="fav2">
               <div class="fav-text">
                 <h1>Lunch</h1>
-                <h4>Check out our favorite lunch foods ›</h4>
+                <p>Check out our favorite lunch foods ›</p>
               </div>
             </div> 
        </a>
@@ -123,7 +101,7 @@
             <div class="fav3">
               <div class="fav-text"> 
                 <h1>Dinner</h1>
-                <h4>Check out our favorite dinner foods ›</h4>
+                <p>Check out our favorite dinner foods ›</p>
               </div> 
             </div> 
         </a>
@@ -132,7 +110,7 @@
             <div class="fav4">
               <div class="fav-text"> 
                 <h1>Snack & Cheap Food</h1>
-                <h4>Check out our favorite snacks ›</h4>
+                <p>Check out our favorite snacks ›</p>
               </div> 
             </div> 
         </a>
@@ -141,7 +119,7 @@
             <div class="fav5">
               <div class="fav-text"> 
                 <h1>Desserts & Ice Cream</h1>
-                <h4>Check out our favorite desserts ›</h4>
+                <p>Check out our favorite desserts ›</p>
               </div> 
             </div> 
         </a>
@@ -163,7 +141,7 @@
       </div>
 
     
-    
+  <script src="js/mobile-menu.js"></script>  
   </main>
     <footer>
        <div class ="footer-text">

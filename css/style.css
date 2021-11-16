@@ -34,13 +34,13 @@ header .logo {
     color: white;
 }
 
-.dropbtn span {
+#dropbtn span {
     font-family: 'Montserrat';
     padding-left: 5px;
 }
 
 
-.dropbtn {
+#dropbtn {
     display: flex;
     flex-flow: row;
     justify-content: left;
@@ -54,7 +54,7 @@ header .logo {
     cursor: pointer;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
+  #dropbtn:hover, #dropbtn:focus {
     background-color: #162F54;
   }
   .menu {
@@ -244,7 +244,7 @@ header .logo {
 
 }
 
-#about div h3{
+#about div p{
     margin-top: 15px;
     font-size: 1.15em;
     font-family: 'Raleway';
@@ -279,16 +279,17 @@ header .logo {
     color: #11233f;
     font-size: 2.6em;
     margin-top: 6%;
-    font-family: 'Poppins';
+    font-family: 'Raleway';
     font-weight: 200;
     text-transform: capitalize;
     line-height: 1em;
 }
 .headline h2 {
   color: #11233f;
-  font-size: 1.15em;
+  font-size: 1em;
   font-family: 'Poppins';
-  margin-top: 10px
+  margin-top: 10px; 
+  font-weight: 800;
 }
 
 .headline .fa {
@@ -405,7 +406,7 @@ header .logo {
       color: #FFFFFF;
   }
 
-  #favorites .fav1 h4, #favorites .fav2 h4, #favorites .fav3 h4, #favorites .fav4 h4, #favorites .fav5 h4 {
+  #favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
     font-size: 1em;
     font-family: 'Raleway';
     font-weight: 700;
@@ -1125,37 +1126,95 @@ hr {
 .desktop-nav {
     display: block;
     padding: 10px 20px;
-    width: 100%;
+    width: 80%;
 }
 .menu {
   width: 100%;
+  align-items: center;
 }
 .desktop-nav .nav_links {
+    
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
+.desktop-nav .nav_links .nav_item{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+}
 .desktop-nav .nav_links .nav_item a{
-    color: #3e577d;
+    color: #5490ee; 
     font-family: 'Raleway';
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
+    padding: 1.125em 0.875em;
 
 }
+
+
+
+.desktop-nav .nav_links .nav_item a::before{
+  content: ""; 
+  position: absolute; 
+  right: 1em; 
+  bottom: -.35em; 
+  width: 0; 
+  height: 2px; 
+  background-color: #f3e18f; 
+  -webkit-transform: skew(45deg); 
+  -ms-transform: skew(45deg); 
+  transform: skew(45deg); 
+  transition: width 0.25s ease; 
+}
+
+.desktop-nav .nav_links .nav_item a:hover:before, .desktop-nav .nav_links .nav_item a:active:before{
+  left: 1em; 
+  width: calc(100% - 2em);
+}
+
 .desktop-nav .nav_links .nav_item a:hover{
-    color: #93a5c1;
+    color: #162F54;
   
 
 }
 .desktop-nav .nav_links .nav_item .current{
-    color: #5490ee;
-
-   
-
+    border-top: solid 0.5px#162F54;
+    color: #162F54;
+    padding: 0.4em 0.2em 0.5em 0.2em;
 }
+
+.desktop-nav .nav_links .nav_item .current:before{
+  content: ""; 
+  position: absolute;
+   
+  right: 1em; 
+  padding: 0px;
+  bottom: 1.6em; 
+  width: 0; 
+  height: 5px; 
+  background-color: #f3e18f; 
+  -webkit-transform: skew(45deg); 
+  -ms-transform: skew(45deg); 
+  transform: skew(45deg); 
+  transition: width 0.25s ease; 
+  
+  border-top: solid 0.5px#FFFFFF;
+}
+
+.desktop-nav .nav_links .nav_item .current:hover:before, .desktop-nav .nav_links .nav_item .current:active:before{
+  left: -.3em; 
+  width: calc(100% + .4em);
+}
+  
+
 #favorites .fav1 {
   background: url(../images/dimos.jpeg);
   background-size: cover;
@@ -1188,7 +1247,7 @@ hr {
   color: #162F54;
 }
 
-#favorites .fav1 h4, #favorites .fav2 h4, #favorites .fav3 h4, #favorites .fav4 h4, #favorites .fav5 h4 {
+#favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
 font-size: 1.15em;
 font-family: 'Raleway';
 font-weight: 700;
@@ -1288,17 +1347,16 @@ display: block;
 footer {
     display: flex;
     flex-direction: row;
-    background: #93a5c1;
-    padding: 20px;
-    align-items: flex-end;
-    justify-content: space-between;
+    padding: 75px 20px 50px 20px;
+    align-items: center;
  }
  footer p{
-    color: #162F54;
+    color: #FFFFFF;
+    font-size: 12px;
 }
 
 footer h2{
-    color: #162F54;
+    color: #FFFFFF;
     font-size: 24px;
     font-family: 'Montserrat';
     padding-left: 5px;
@@ -1311,6 +1369,25 @@ footer h3{
     line-height: 1.15em;
     font-family: 'Poppins';
     padding-left: 5px;
+}
+footer div {
+    width: 60%;
+    padding-left: 50px;
+}
+footer .footer_links .footer_item a {
+  font-size: 18px;
+}
+
+footer .footer_links {
+  margin-top: auto;
+  justify-content: center;
+}
+
+
+footer .footer-text {
+  width: 40%;
+  margin: 0;
+
 }
 footer img .logo{
     max-width: 150px;

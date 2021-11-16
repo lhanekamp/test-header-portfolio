@@ -26,8 +26,8 @@
         <img src="images/AA.png" alt="logo" class = "logo">
       </a>
       <div class="dropdown">
-        
-        <button onclick="myFunction()" class="dropbtn">
+
+        <button id="dropbtn">
             <div>
                 <i class="fa fa-bars"></i>
                 <span>Menu</span>
@@ -42,28 +42,6 @@
             
         </div>
         </div>
-    
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn div span')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-        </script>
         <nav class = "desktop-nav">
             <ul class="nav_links">
               <li class="nav_item"><a href="index.html">Home</a></li>
@@ -242,6 +220,8 @@
             <img src="images/utensil.png" alt="Utensil"/>
            </div>
       </div>
+      <script src="js/mobile-menu.js"></script>
+
     </main>
     <footer>
       <div class ="footer-text">

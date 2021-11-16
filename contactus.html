@@ -26,8 +26,8 @@
         <img src="images/AA.png" alt="logo" class = "logo">
       </a>
       <div class="dropdown">
-        
-        <button onclick="myFunction()" class="dropbtn">
+
+        <button id="dropbtn">
             <div>
                 <i class="fa fa-bars"></i>
                 <span>Menu</span>
@@ -43,27 +43,7 @@
         </div>
         </div>
     
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn div span')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-        </script>
+       
         <nav class = "desktop-nav">
             <ul class="nav_links">
               <li class="nav_item"><a href="index.html">Home</a></li>
@@ -84,50 +64,49 @@
     </header>
     <div class="about-us">
         <h1>Contact Us!</h1>
-        <div id="form">
-        <hr>
-        <form action="submission.html" method="POST">
+        
+        <form action = "#" method = "get" id="form">
     
-		<section class="name">
+		<fieldset class="name">
           <h2>Name</h2>
           <div class="sidebyside">
             <div class="first">
-                <input type="text" id="fname" name="fname" >
+                <input type="text" id="fname" name="fname" required>
                 <label for="fname">First</label><br>
             </div>
             <div class="last">
-                <input type="text" id="lname" name="lname" >
+                <input type="text" id="lname" name="lname" required>
                 <label for="lname">Last</label><br>
             </div>
           </div>
 
-        </section>
-        <section class="email">
+        </fieldset>
+        <fieldset class="email">
             <div id="email-address">
               <label for="email">Email</label><br>
-              <input type="text" id="email" name="email" >
+              <input type="text" id="email" name="email" required>
                   
             </div>
-          </section>
+          </fieldset>
           <hr>
-          <section class="phone">
+          <fieldset class="phone">
             <div id="phone-number">
               <label for="phone">Phone Number</label><br>
-                  <input type="text" id="phone" name="phone" >
+                  <input type="text" id="phone" name="phone" required>
             </div>
-          </section>
+          </fieldset>
           <hr>
 
-        <section class="message">
+        <fieldset class="message">
           <label for="message">Message</label>
           <br>
           <textarea id="message" name="message" rows="5" cols="40"></textarea>
-        </section>
+        </fieldset>
         <hr>
 
-        <section class="submission">
-          <input class="submit" type="submit" value="Send Message">
-        </section>
+        <fieldset>
+          <button class = "submit" type=submit>Send Message</button>
+        <fieldset>
         
       </form>
         </div>
@@ -170,7 +149,10 @@
             
 
       
-    
+        <script src="js/form.js"></script>
+        <script src="js/mobile-menu.js"></script>
+
+
     
     </main>
     <footer>
