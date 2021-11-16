@@ -1322,6 +1322,7 @@ margin-top: -10%;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
 }
 
 .img-one {
@@ -1349,6 +1350,7 @@ margin-top: -10%;
   grid-column: 1 / -1;
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
 }
 
 .img-four {
@@ -1374,6 +1376,7 @@ margin-top: -10%;
   grid-column: 1 / -1;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 1fr 2fr;
+  grid-gap: 0px;
 }
 
 .img-eight {
