@@ -1219,7 +1219,7 @@ hr {
 }
 
 #hero {
-  align-items: end;
+  align-items: flex-end;
   background-image: url(../images/state.jpg);
 }
 #hero div {
