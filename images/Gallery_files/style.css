@@ -155,7 +155,7 @@ header .logo {
 }
 
 #hero h1{
-  font-size: 2.5em;
+  font-size: 2.75em;
   font-family: 'Raleway';
   text-shadow: 1px 2px #3E577D;
   color: #FFFFFF;
@@ -561,10 +561,21 @@ footer .footer-text h2{
 .grid_space{
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: repeat(10, auto);
+  grid-template-rows: repeat(11, auto);
 
 }
+.grid_space header{
+  
+  background-size: cover; 
+  color: white;
+  min-height: 400px; 
+  background-image: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%)), url(../images/stadium.jpeg);
+  background-repeat: no-repeat;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  padding: 75px 20px;
 
+}
 
 .grid_space #main div{
     width: 85%;
@@ -790,20 +801,20 @@ footer .footer-text h2{
     text-decoration: none;
 }
 
-.gallery-wall header, #grid-header{
+.gallery-wall header{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-size: cover; 
   color: white;
-  height: 500px; 
+  min-height: 400px; 
   background: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%));
   background-repeat: no-repeat;
   padding: 75px 20px;
 
 }
 
-.gallery-wall header h1, #grid-header h1 {
+.gallery-wall header h1 {
     font-family: 'Montserrat';
     text-transform: uppercase;
     text-align: center;
@@ -811,7 +822,7 @@ footer .footer-text h2{
     margin-bottom: 10px;
 }
 
-.gallery-wall header p, #grid-header p {
+.gallery-wall header p {
   font-family: 'Montserrat';
   text-align: center;
   font-size: 1.1em;
@@ -828,9 +839,6 @@ footer .footer-text h2{
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
-  border-bottom: none;
-  grid-gap: 0px;
-
 
 }
 
@@ -849,8 +857,6 @@ footer .footer-text h2{
   display: grid;
   grid-column: 1 / -1;
   grid-template-rows:  repeat(4, auto);
-  border-bottom: none;
-  grid-gap: 0px;
 }
 
 .img-four {
@@ -871,8 +877,6 @@ footer .footer-text h2{
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, auto);
-  border-bottom: none;
-  grid-gap: 0px;
 }
 
 .img-eight {
@@ -934,13 +938,13 @@ grid-row: 6 / -1;
 }
 .about-us h1 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   background-color: #162F54;
   color:white;
-  font-family: 'Montserrat';
+  font-family: 'Abril Fatface';
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -1104,18 +1108,6 @@ border-radius: 4px;
   color: #3e577d;
 }
 
-#map {
-  
-  width: 100%;
-  max-height: 300px;
-
-}
-
-#map img {
-     width: 100%;
-    object-fit: cover;
-  max-height: 300px ;
-}
 
 
 
@@ -1293,8 +1285,9 @@ margin-top: -10%;
 }
 
 .about-us {
-  padding: 0px 20px;
+  
   width: 75%;
+  margin: auto;
 }
 
 .contact-bckgrnd2 h3 {
@@ -1305,27 +1298,30 @@ margin-top: -10%;
   flex-direction: row;
 
 }
+.grid_space header{
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  min-height: 550px;
+  background: linear-gradient(180deg, rgb(22 47 84 / 93%), rgb(14 18 42 / 99%));
+  background-repeat: no-repeat;
+  padding: 75px 20px;
+
+}
 
 
 .favs-breakfast, .favs-lunch, .favs-dinner, .favs-snack, .favs-dessert{
   padding: 50px 50px;
 
 }
-
-.gallery-wall .container {
-  grid-template-columns: none;
-  justify-content: space-between;
-}
 .gallery-wall .container .breakfast-gallery {
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5px;
-  border-bottom: 5px solid #FFFFFF;
-  border-top: 5px solid #FFFFFF;
-
 }
 
 .img-one {
@@ -1353,9 +1349,6 @@ margin-top: -10%;
   grid-column: 1 / -1;
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
-  border-bottom: 5px solid #FFFFFF;
-
 }
 
 .img-four {
@@ -1381,8 +1374,6 @@ margin-top: -10%;
   grid-column: 1 / -1;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 1fr 2fr;
-  grid-gap: 5px;
-  border-bottom: 5px solid #FFFFFF;
 }
 
 .img-eight {
@@ -1411,67 +1402,6 @@ margin-top: -10%;
   grid-row: 4 / -1;
 }
 
-.gallery-wall header div, #grid-header div{
-  margin: auto;
-  width: 60%;
-
-}
-
-#contact-us {
-  background-color: #FFFFFF;
-  padding: 25px 0px 0px 20px;
-  
-}
-#contact-us h1 {
-  font-size: 6em;
-    background: #FFFFFF;
-    text-align: left;
-    font-family: 'Poppins';
-    z-index: 10;
-    margin-left: 10px;
-   
-}
-
-#contact-us p{
-  background-color: rgb(221 221 221 / 45%);
-  font-size: 1.25em;
-  display: flex;
-  padding: 50px;
-  width: 60%;
-
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    height: 300px;
-    margin-bottom: -4%;
-    z-index: 0;
-    position: relative;
-    margin-left: auto;
-}
-
-.about-us {
-  background: #162F54;
-  padding: 50px 20px;
-  border-bottom: 10px solid #FFFFFF;
-  width: 100%;
-  margin-bottom: 50px;
-  
-}
-
-.about-us h1 {
-  width: 70%;
-  background-color: #3e577d;
-  font-family: 'Montserrat';
-  font-size: 1.7em;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-#form {
-  width: 70%;
-  position: relative;
-    margin-bottom: -10%;
-}
 footer {
   display: flex;
   flex-direction: row;
