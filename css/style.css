@@ -1315,7 +1315,7 @@ margin-top: -10%;
 
 .gallery-wall .container {
   grid-template-columns: none;
-  grid-template-rows: none
+  grid-template-rows: none;
   justify-content: space-between;
 }
 .gallery-wall .container .breakfast-gallery {
