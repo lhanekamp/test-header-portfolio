@@ -62,13 +62,14 @@
             </p>
         </div>    
     </header>
+    <div class = "contact-top"> 
+    </div>
     <div class="about-us">
 
         <h1>Send Us A Message</h1>
         
-        <form action = "#" method = "get" id="form">
-    
-		<fieldset class="name">
+    <form action="https://formspree.io/f/xoqraynw" method="POST" id="form">
+		  <fieldset class="name">
           <h2>Name</h2>
           <div class="sidebyside">
             <div class="first">
@@ -85,7 +86,7 @@
         <fieldset class="email">
             <div id="email-address">
               <label for="email">Email</label><br>
-              <input type="text" id="email" name="email" required>
+              <input type="email" id="email" name="email" required>
                   
             </div>
           </fieldset>
@@ -93,7 +94,10 @@
           <fieldset class="phone">
             <div id="phone-number">
               <label for="phone">Phone Number</label><br>
-                  <input type="text" id="phone" name="phone" required>
+                  <input type="tel" id="phone" name="phone" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                  <p>Format: 123-456-7890</p>
             </div>
           </fieldset>
           <hr>
