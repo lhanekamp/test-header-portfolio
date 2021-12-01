@@ -315,7 +315,7 @@ text-align: center;
   background-color: #3e577d;
 } 
 
-#favorites .fav1 {
+#favorites #fav1 {
   background: url(../images/angelos.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -343,7 +343,7 @@ text-align: center;
 
 
  
-#favorites .fav2 {
+#favorites #fav2 {
   background-image: url(../images/zingermans.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -359,7 +359,7 @@ text-align: center;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
 
-#favorites .fav3 {
+#favorites #fav3 {
   background-image: url(../images/of-rice.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -374,7 +374,7 @@ text-align: center;
   min-height: 300px;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
-#favorites .fav4 {
+#favorites #fav4 {
   background-image: url(../images/fritas.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -389,7 +389,7 @@ text-align: center;
   min-height: 300px;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
-#favorites .fav5 {
+#favorites #fav5 {
   background-image: url(../images/crumbl.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -407,14 +407,14 @@ text-align: center;
 
 
 
-#favorites .fav1 h1, #favorites .fav2 h1, #favorites .fav3 h1, #favorites .fav4 h1, #favorites .fav5 h1 {
+#favorites #fav1 h1, #favorites #fav2 h1, #favorites #fav3 h1, #favorites #fav4 h1, #favorites #fav5 h1 {
     font-size: 1.3em;
     font-family: 'Poppins', Georgia, serif;
     font-weight: 200;
     color: #FFFFFF;
 }
 
-#favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
+#favorites #fav1 p, #favorites #fav2 p, #favorites #fav3 p, #favorites #fav4 p, #favorites #fav5 p {
   font-size: 1em;
   font-family: 'Raleway', Georgia, serif;
   font-weight: 700;
@@ -1633,7 +1633,7 @@ footer img .logo{
 
 
 
-#favorites .fav1 h1, #favorites .fav2 h1, #favorites .fav3 h1, #favorites .fav4 h1, #favorites .fav5 h1 {
+#favorites #fav1 h1, #favorites #fav2 h1, #favorites #fav3 h1, #favorites #fav4 h1, #favorites #fav5 h1 {
 font-size: 2.35em;
 font-family: 'Raleway', Georgia, serif;
 font-weight: 300;
@@ -1641,7 +1641,7 @@ margin-bottom: 12px;
 color: white;
 }
 
-#favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
+#favorites #fav1 p, #favorites #fav2 p, #favorites #fav3 p, #favorites #fav4 p, #favorites #fav5 p {
 font-size: 1.25em;
 font-family: 'Raleway', Georgia, serif;
 font-weight: 700;
