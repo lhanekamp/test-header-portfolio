@@ -141,12 +141,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover; 
-  background-image: linear-gradient(180deg, rgb(6 10 28 / 74%), rgb(14 18 42 / 72%)), url(../images/state.jpg);
-  background-repeat: no-repeat;
+  background: #162f54;
   color: white; 
   padding-right: 0px;
   height: 450px;
@@ -154,7 +149,6 @@ header .logo {
   grid-row: 1 / span 1;
 }
 #hero div {
-  background-color: rgb(255 255 255 / 15%);
   padding: 3%;
   text-align: center;
   width: 100%;
@@ -415,9 +409,9 @@ text-align: center;
 }
 
 #favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
-  font-size: 1em;
+  font-size: .85em;
   font-family: 'Raleway', Georgia, serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #f1f1f1;
 }
 
@@ -565,7 +559,7 @@ footer .footer-text h2{
 
 
 
-.grid_space{
+.grid-space{
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: repeat(10, auto);
@@ -573,38 +567,42 @@ footer .footer-text h2{
 }
 
 
-.grid_space #main div{
+.grid-space #main div{
     width: 85%;
 }
 
-.grid_space header h1{
+.grid-space header h1{
   font-size: 48px;
   font-family: 'Abril Fatface', Georgia, serif;
   color: #FFFFFF;
   text-align: left;
 }
 
-.grid_space header p{
+.grid-space header p{
   font-size: 1em;
   font-family: 'Poppins', Georgia, serif;
   color: #FFFFFF;
   text-align: left;
 }
 
-.grid_space h1 {
+.grid-space h1 {
   font-size: 2em;
+  line-height: 1.2em;
   font-family: 'Abril Fatface', Georgia, serif;
   color: #162F54;
 
 }
-.grid_space h2 {
+.grid-space h2 {
   font-size: 1.15em;
+  line-height: 1.2em;
+  margin-top: 4%;
+  margin-bottom: 2%;
   font-family: 'Poppins', Georgia, serif;
   color: #3E577D;
 
 }
 
-.grid_space i {
+.grid-space i {
     color: #3E577D;
     font-size: 36px;
 }
@@ -661,7 +659,7 @@ footer .footer-text h2{
 
 .favs-breakfast{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
   overflow: hidden;
   grid-row: 3 / span 1;
@@ -670,7 +668,7 @@ footer .footer-text h2{
 }
 .favs-lunch{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
   overflow: hidden;
   grid-row: 5 / span 1;
@@ -679,7 +677,7 @@ footer .footer-text h2{
 }
 .favs-dinner{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
   overflow: hidden;
   grid-row: 7 / span 1;
@@ -688,7 +686,7 @@ footer .footer-text h2{
 }
 .favs-snack{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
   overflow: hidden;
   grid-row: 9 / span 1;
@@ -697,7 +695,7 @@ footer .footer-text h2{
 }
  .favs-dessert{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
   overflow: hidden;
   grid-row: 11 / span 1;
@@ -820,13 +818,13 @@ footer .footer-text h2{
     text-transform: uppercase;
     text-align: center;
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .gallery-wall header p, #grid-header p {
   font-family: 'Montserrat', Georgia, serif;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .gallery-wall .container {
@@ -902,7 +900,7 @@ grid-row: 11 / span 1;
 .gallery-wall .container img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 } 
 
 #contact-us {
@@ -1081,7 +1079,7 @@ hr {
 }
 
 .contact-icon #pin {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   margin-top: -110px;
   margin-left: 5%;
@@ -1118,9 +1116,9 @@ hr {
 }
 
 #map img {
-     width: 100%;
-    object-fit: cover;
-  max-height: 300px ;
+  width: 100%;
+  object-fit: cover;
+  max-height: 450px ;
 }
 
 
@@ -1382,6 +1380,7 @@ margin-top: -10%;
 
 .favs-breakfast, .favs-lunch, .favs-dinner, .favs-snack, .favs-dessert{
   padding: 50px 50px;
+  grid-template-columns: 2fr 1fr;
 
 }
 
@@ -1578,9 +1577,7 @@ footer img .logo{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
   background-position: top;
-  background-size: cover; 
   color: white; 
   padding-right: 0px;
   min-height: 650px;
@@ -1763,13 +1760,13 @@ color: white;
   margin-left: 0px;
 }
 
-.grid_space {
+.grid-space {
   grid-template-rows: none;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0px
 }
 
-.grid_space ul {
+.grid-space ul {
   display: flex;
   flex-direction: row;
 }
@@ -1792,12 +1789,12 @@ ul .first-half {
   font-size: 22px;
 }
 
-.grid_space h1 {
+.grid-space h1 {
   font-size: 2.75em;
   margin-bottom: 4%;
 
 }
-.grid_space h2 {
+.grid-space h2 {
   font-size: 1.5em;
 
 }
@@ -2006,7 +2003,9 @@ ul .first-half {
 
 
 
-
+.contact-icon #pin {
+  max-width: 225px;
+}
 
 
 #phone-number p {
