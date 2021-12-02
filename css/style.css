@@ -4,7 +4,7 @@ a.skip{
   padding: 6px;
   color: #3E577D;
   position: absolute;
-  font-family: 'Montserrat', Georgia, serif;;
+  font-family: 'Montserrat', Georgia, serif;
   top: -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
@@ -1008,7 +1008,7 @@ hr {
 }   
 
 .submit:hover {
-background: rgb(22,47,84);;
+background: rgb(22,47,84);
 border-radius: 4px;
 
 }
