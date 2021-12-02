@@ -315,7 +315,7 @@ text-align: center;
   background-color: #3e577d;
 } 
 
-#favorites #fav1 {
+#favorites .fav1 {
   background: url(../images/angelos.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -343,7 +343,7 @@ text-align: center;
 
 
  
-#favorites #fav2 {
+#favorites .fav2 {
   background-image: url(../images/zingermans.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -359,7 +359,7 @@ text-align: center;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
 
-#favorites #fav3 {
+#favorites .fav3 {
   background-image: url(../images/of-rice.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -374,7 +374,7 @@ text-align: center;
   min-height: 300px;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
-#favorites #fav4 {
+#favorites .fav4 {
   background-image: url(../images/fritas.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -389,7 +389,7 @@ text-align: center;
   min-height: 300px;
   box-shadow: 0.5px 0.5px 5px 0.5px #2e2d2d73;
   }
-#favorites #fav5 {
+#favorites .fav5 {
   background-image: url(../images/crumbl.jpeg);
   font-size: 1em;
   background-size: cover;
@@ -407,14 +407,14 @@ text-align: center;
 
 
 
-#favorites #fav1 h1, #favorites #fav2 h1, #favorites #fav3 h1, #favorites #fav4 h1, #favorites #fav5 h1 {
+#favorites .fav1 h1, #favorites .fav2 h1, #favorites .fav3 h1, #favorites .fav4 h1, #favorites .fav5 h1 {
     font-size: 1.3em;
     font-family: 'Poppins', Georgia, serif;
     font-weight: 200;
     color: #FFFFFF;
 }
 
-#favorites #fav1 p, #favorites #fav2 p, #favorites #fav3 p, #favorites #fav4 p, #favorites #fav5 p {
+#favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
   font-size: 1em;
   font-family: 'Raleway', Georgia, serif;
   font-weight: 700;
@@ -1633,7 +1633,7 @@ footer img .logo{
 
 
 
-#favorites #fav1 h1, #favorites #fav2 h1, #favorites #fav3 h1, #favorites #fav4 h1, #favorites #fav5 h1 {
+#favorites .fav1 h1, #favorites .fav2 h1, #favorites .fav3 h1, #favorites .fav4 h1, #favorites .fav5 h1 {
 font-size: 2.35em;
 font-family: 'Raleway', Georgia, serif;
 font-weight: 300;
@@ -1641,7 +1641,7 @@ margin-bottom: 12px;
 color: white;
 }
 
-#favorites #fav1 p, #favorites #fav2 p, #favorites #fav3 p, #favorites #fav4 p, #favorites #fav5 p {
+#favorites .fav1 p, #favorites .fav2 p, #favorites .fav3 p, #favorites .fav4 p, #favorites .fav5 p {
 font-size: 1.25em;
 font-family: 'Raleway', Georgia, serif;
 font-weight: 700;
@@ -1677,7 +1677,7 @@ color: white;
   background-color: #162f54;
 }
 
-#favorites #fav {
+#favorites #fav-front1, #favorites #fav-front2, #favorites #fav-front3, #favorites #fav-front4, #favorites #fav-front5 {
   background: transparent;
   position: relative;
   margin: 0px;
@@ -1689,7 +1689,7 @@ color: white;
   transform-style: preserve-3d;
 }
 
-.flip-card:hover #fav, a.odd:focus .flip-card #fav, a.even:focus .flip-card #fav{
+.flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, a.odd:focus .flip-card #fav-front1, a.odd:focus .flip-card #fav-front2, a.odd:focus .flip-card #fav-front3, a.odd:focus .flip-card #fav-front4, a.odd:focus .flip-card #fav-front5, a.even:focus .flip-card #fav-front1, a.even:focus .flip-card #fav-front2, a.even:focus .flip-card #fav-front3, a.even:focus .flip-card #fav-front4, a.even:focus .flip-card #fav-front5{
     transform: rotateY(180deg);
 }
 
@@ -2009,11 +2009,8 @@ footer p {
     border: 1px solid #FFFFFF;
     perspective: 1000px; 
   }
-  .fav-text:hover {
-    background-color: #162f54;
-  }
   
-  #favorites .fav {
+  #favorites #fav-front1, #favorites #fav-front2, #favorites #fav-front3, #favorites #fav-front4, #favorites #fav-front5 {
     display: block;
     background: transparent;
     position: relative;
@@ -2025,11 +2022,9 @@ footer p {
 
   }
 
-  #favorites .fav: hover {
-    display: none;
-  }
+ 
   
-  .flip-card:hover .fav, .flip-card:active .fav, .flip-card:focus .fav{
+  .flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, .flip-card:active #fav-front1, .flip-card:active #fav-front2, .flip-card:active #fav-front3, .flip-card:active #fav-front4, .flip-card:active #fav-front5, .flip-card:focus #fav-front1, .flip-card:focus #fav-front2, .flip-card:focus #fav-front3, .flip-card:focus #fav-front4, .flip-card:focus #fav-front5{
     display: none;
     transform: none;
 
@@ -2076,7 +2071,7 @@ footer p {
     display: none;
   }
   
-  .fav-text:hover {
+  .fav-text:hover, a.odd:focus .fav-text, a.even:focus .fav-text  {
     
     background-color: #162f54;
     color: white;
@@ -2106,7 +2101,7 @@ footer p {
     background-color: #3e577d;
   }
 
-  .flip-card:hover .fav, a.odd:focus .flip-card .fav, a.even:focus .flip-card .fav{
+  .flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, a.odd:focus .flip-card #fav-front1, a.odd:focus .flip-card #fav-front2, a.odd:focus .flip-card #fav-front3, a.odd:focus .flip-card #fav-front4, a.odd:focus .flip-card #fav-front5, a.even:focus .flip-card #fav-front1, a.even:focus .flip-card #fav-front2, a.even:focus .flip-card #fav-front3, a.even:focus .flip-card #fav-front4, a.even:focus .flip-card #fav-front5{
     transform: none;
 }
 
@@ -2147,4 +2142,3 @@ a.skip:focus{
 
 
 }
-
