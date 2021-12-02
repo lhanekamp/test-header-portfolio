@@ -491,8 +491,7 @@ font-size: 24px;
 
 #contact .contact-info p {
   font-size: 1.2em;
-  font-family: 'Raleway';
-  font-weight: 600;
+  font-family: 'Poppins', Georgia, serif;
   color:#11233f;
 }
 
@@ -588,6 +587,7 @@ footer .footer-text h2{
 .grid-space h1 {
   font-size: 2em;
   line-height: 1.2em;
+  margin-bottom: 10px;
   font-family: 'Abril Fatface', Georgia, serif;
   color: #162F54;
 
@@ -831,7 +831,6 @@ footer .footer-text h2{
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(11, auto);
-  justify-content: space-between;
 }
 
 
