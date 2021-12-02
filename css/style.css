@@ -1677,7 +1677,7 @@ color: white;
   background-color: #162f54;
 }
 
-#favorites #fav {
+#favorites #fav-front1, #favorites #fav-front2, #favorites #fav-front3, #favorites #fav-front4, #favorites #fav-front5 {
   background: transparent;
   position: relative;
   margin: 0px;
@@ -1689,7 +1689,7 @@ color: white;
   transform-style: preserve-3d;
 }
 
-.flip-card:hover #fav, a.odd:focus .flip-card #fav, a.even:focus .flip-card #fav{
+.flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, a.odd:focus .flip-card #fav-front1, a.odd:focus .flip-card #fav-front2, a.odd:focus .flip-card #fav-front3, a.odd:focus .flip-card #fav-front4, a.odd:focus .flip-card #fav-front5, a.even:focus .flip-card #fav-front1, a.even:focus .flip-card #fav-front2, a.even:focus .flip-card #fav-front3, a.even:focus .flip-card #fav-front4, a.even:focus .flip-card #fav-front5{
     transform: rotateY(180deg);
 }
 
@@ -2009,11 +2009,8 @@ footer p {
     border: 1px solid #FFFFFF;
     perspective: 1000px; 
   }
-  .fav-text:hover {
-    background-color: #162f54;
-  }
   
-  #favorites #fav {
+  #favorites #fav-front1, #favorites #fav-front2, #favorites #fav-front3, #favorites #fav-front4, #favorites #fav-front5 {
     display: block;
     background: transparent;
     position: relative;
@@ -2025,11 +2022,9 @@ footer p {
 
   }
 
-  #favorites #fav: hover {
-    display: none;
-  }
+ 
   
-  .flip-card:hover #fav, .flip-card:active #fav, .flip-card:focus #fav{
+  .flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, .flip-card:active #fav-front1, .flip-card:active #fav-front2, .flip-card:active #fav-front3, .flip-card:active #fav-front4, .flip-card:active #fav-front5, .flip-card:focus #fav-front1, .flip-card:focus #fav-front2, .flip-card:focus #fav-front3, .flip-card:focus #fav-front4, .flip-card:focus #fav-front5{
     display: none;
     transform: none;
 
@@ -2076,7 +2071,7 @@ footer p {
     display: none;
   }
   
-  .fav-text:hover {
+  .fav-text:hover, a.odd:focus .fav-text, a.even:focus .fav-text  {
     
     background-color: #162f54;
     color: white;
@@ -2106,7 +2101,7 @@ footer p {
     background-color: #3e577d;
   }
 
-  .flip-card:hover #fav, a.odd:focus .flip-card #fav, a.even:focus .flip-card #fav{
+  .flip-card:hover #fav-front1, .flip-card:hover #fav-front2, .flip-card:hover #fav-front3, .flip-card:hover #fav-front4, .flip-card:hover #fav-front5, a.odd:focus .flip-card #fav-front1, a.odd:focus .flip-card #fav-front2, a.odd:focus .flip-card #fav-front3, a.odd:focus .flip-card #fav-front4, a.odd:focus .flip-card #fav-front5, a.even:focus .flip-card #fav-front1, a.even:focus .flip-card #fav-front2, a.even:focus .flip-card #fav-front3, a.even:focus .flip-card #fav-front4, a.even:focus .flip-card #fav-front5{
     transform: none;
 }
 
@@ -2147,4 +2142,3 @@ a.skip:focus{
 
 
 }
-
